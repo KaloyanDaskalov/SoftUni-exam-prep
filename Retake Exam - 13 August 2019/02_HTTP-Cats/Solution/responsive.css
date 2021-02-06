@@ -1,0 +1,17 @@
+@media screen and (max-width: 900px) {
+  .wrapper.style2 {
+    padding: 0;
+  }
+  .content .gallery {
+    flex-direction: column;
+  }
+  .gallery div {
+    width: 100%;
+  }
+  .spotlight {
+    -ms-flex-direction: column;
+  }
+  .spotlight > * {
+    width: 100%;
+  }
+}
