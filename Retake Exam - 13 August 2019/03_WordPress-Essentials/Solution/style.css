@@ -255,3 +255,172 @@ ul {
   margin-right: 1rem;
   font-weight: 900;
 }
+
+/* course match */
+
+.match > .content {
+  background-color: var(--orange-uni);
+  color: var(--white);
+  padding: 2rem;
+}
+
+.match .section-titles h2 {
+  color: var(--white);
+}
+
+.match .section-titles hr {
+  background-color: var(--white);
+  width: 21rem;
+}
+
+.match-text {
+  font-size: 1.2rem;
+}
+
+/* course signin section */
+
+.signin > .content {
+  background-color: var(--gray-uni);
+  padding: 2rem;
+  height: 25rem;
+  position: relative;
+}
+
+.signin-info {
+  margin-bottom: 1.5rem;
+}
+
+.signin-title {
+  color: var(--orange-uni);
+}
+
+.signin-text {
+  font-size: 1.2rem;
+  color: var(--clr-text-uni);
+}
+
+/* course signin inner-content  */
+
+.content.inner-content {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: -1rem;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.content.inner-content .signin-way:first-of-type {
+  background-color: var(--blue-uni);
+}
+
+.content.inner-content .signin-way:last-of-type {
+  background-color: var(--orange-uni);
+}
+
+.signin-way {
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  align-items: flex-start;
+}
+
+.way-list {
+  list-style-type: disc;
+  font-size: 1.2rem;
+  flex: 0 0 70%;
+}
+
+.way-list li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+/* lector section */
+
+.lecturer > .content {
+  background-color: var(--gray-uni);
+  padding: 2rem 2rem 3rem;
+}
+
+.lecturer .section-titles hr {
+  width: 11rem;
+}
+
+.lecturer-img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.lecturer-img img {
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+}
+
+.lecturer-info {
+  flex: 0 0 85%;
+}
+
+.lecturer-name {
+  color: var(--blue-uni);
+  margin-bottom: 1.5rem;
+}
+
+.lecturer-about {
+  font-size: 1.2rem;
+  color: var(--clr-text-uni);
+}
+
+/* button participation */
+
+.participation {
+  display: block;
+  margin: auto;
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--blue-uni);
+  padding: 3rem 1rem;
+}
+
+.nav-footer {
+  width: calc(1170px + 1rem);
+  margin: auto;
+  align-items: flex-start;
+}
+
+.footer-navbar {
+  flex: 0 0 25%;
+}
+
+.footer-navbar h4 {
+  color: var(--orange-uni);
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.footer-navbar li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.footer-icons {
+  flex: 0 0 25%;
+}
+
+.footer-icons ul {
+  width: 60%;
+  margin: 0 auto 1.5rem 0;
+}
+
+.footer-icons li {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.footer-icons .copy {
+  color: var(--clr-text-uni);
+  width: 100%;
+}
