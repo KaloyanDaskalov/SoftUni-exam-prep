@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
+  --clr-text-uni: #676363;
   --blue-uni: #234465;
   --orange-uni: #ffa000;
   --gray-uni: #f2f2f2;
@@ -40,7 +41,7 @@ ul {
 
 .section {
   width: 100%;
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .content {
@@ -99,6 +100,26 @@ ul {
   font-size: 1.5rem;
 }
 
+/*  main and watermark position */
+
+.main {
+  position: relative;
+}
+
+.water-mark {
+  position: absolute;
+  top: 150px;
+  left: -60px;
+  z-index: -1;
+}
+
+.water-mark img {
+  transform: rotate(20deg);
+  opacity: 0.5;
+  width: 100%;
+  display: block;
+}
+
 /*  under header tabs */
 
 .tabs.section {
@@ -129,6 +150,7 @@ ul {
     rgba(81, 83, 31, 1) 77%
   );
   position: relative;
+  z-index: -2;
 }
 
 .course-header .content.flex {
@@ -148,6 +170,10 @@ ul {
   margin-bottom: 3rem;
 }
 
+.course-header .content .btn {
+  width: 15rem;
+}
+
 /* info section */
 
 .info > .content {
@@ -162,7 +188,6 @@ ul {
 
 .section-titles hr {
   height: 5px;
-  border-radius: var(--radius);
   border: none;
   background-color: var(--orange-uni);
   width: 6rem;
@@ -185,23 +210,48 @@ ul {
 
 .skills > .content {
   background-color: var(--gray-uni);
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .skills .section-titles hr {
   width: 23rem;
 }
 
-.skill-info {
-  padding: 1rem;
-}
-
 .skill-info li {
-  flex: 0 0 40%;
-  margin-bottom: 1rem;
+  flex: 0 0 45%;
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
+  color: var(--clr-text-uni);
 }
 
 .skill-info .fa-graduation-cap {
   color: var(--orange-uni);
+  font-size: 1.5rem;
+}
+
+/* curriculum info */
+
+.curriculum .content {
+  padding: 2rem;
+  background-color: var(--gray-uni);
+}
+
+.curriculum .section-titles hr {
+  width: 4rem;
+}
+
+.curriculum-info li {
+  flex: 0 0 45%;
+  background-color: var(--dark-gray-uni);
+  border-left: 5px solid var(--blue-uni);
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--clr-text-uni);
+  font-weight: 700;
+}
+
+.curriculum-info li span {
+  color: var(--blue-uni);
+  margin-right: 1rem;
+  font-weight: 900;
 }
