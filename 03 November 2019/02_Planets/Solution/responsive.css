@@ -1,0 +1,21 @@
+@media screen and (max-width: 1000px) {
+  .pair {
+    flex-direction: column;
+    align-items: center;
+  }
+  .planet {
+    width: 100%;
+  }
+
+  nav {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .news ul {
+    flex-flow: column;
+    align-items: center;
+  }
+}

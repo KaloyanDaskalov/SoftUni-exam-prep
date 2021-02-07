@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #001216;
+  --gray: #d9ebeb;
+  --blue: #09ecfc;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  width: 60%;
+  border: 2px solid var(--black);
+  border-radius: 0.25rem;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.header {
+  background-color: var(--black);
+  height: 5rem;
+  padding: 0.5rem 1rem;
+}
+
+.header h1 {
+  color: var(--blue);
+}
+
+.header p {
+  color: var(--white);
+}
+
+.main {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem 5rem;
+}
+
+.img-container {
+  flex: 0 0 35%;
+  border: 1px solid var(--black);
+  padding: 0.5rem 1rem;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+}
+
+.text {
+  flex: 0 0 55%;
+  letter-spacing: 0.2rem;
+}
+
+.footer {
+  background-color: var(--blue);
+  position: relative;
+  padding: 1rem;
+}
+
+.footer-title {
+  position: absolute;
+  color: var(--white);
+  padding: 0.25rem 0.5rem;
+  background-color: var(--black);
+  top: -41px;
+  left: 0;
+}
