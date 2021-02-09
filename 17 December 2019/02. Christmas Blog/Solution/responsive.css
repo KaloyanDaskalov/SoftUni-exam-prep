@@ -1,0 +1,23 @@
+@media screen and (max-width: 1200px) {
+  .big_article .article {
+    width: 15em;
+    height: 16em;
+  }
+  .big_article .article .article_text h3 {
+    font-size: 1rem;
+  }
+  ul .row_articles {
+    flex-flow: column wrap;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  footer {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
