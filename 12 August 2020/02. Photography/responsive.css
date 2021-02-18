@@ -1,0 +1,12 @@
+/* TODO: Add media queries */
+
+@media screen and (max-width: 800px) {
+  .thumbnails {
+    flex-flow: column wrap;
+  }
+
+  .thumbnails > div {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
