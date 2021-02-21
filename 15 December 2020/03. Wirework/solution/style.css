@@ -1,0 +1,200 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+:root {
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+  --black: #383838;
+  --gray: #ececec;
+  --orange: #e24e2a;
+  --green: #1b9772;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+.header {
+  min-height: 65vh;
+  background: url("../images/banner.jpg") center/cover no-repeat;
+}
+
+.navbar {
+  background-color: white;
+  min-height: 5rem;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  width: 23rem;
+}
+
+.logo-title {
+  border-right: 2px solid #999;
+  padding-right: 1rem;
+  display: inline-block;
+}
+
+.logo-title-thin {
+  padding-left: 1rem;
+  color: #999;
+}
+
+.nav {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.nav a {
+  color: #383838;
+  padding: 1em;
+  background-color: var(--gray);
+}
+
+a.selected {
+  background-color: var(--orange);
+  color: white;
+}
+
+/* main */
+
+.terms {
+  background-color: var(--orange);
+  padding: 2rem;
+}
+
+.terms-text {
+  max-width: 1094px;
+  text-align: center;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+.terms-text a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* skills */
+
+.skills {
+  background-color: var(--black);
+  padding: 5rem 2rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.skill {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skill-header .fas {
+  color: white;
+  font-size: 2rem;
+  background-color: var(--orange);
+  padding: 1.5rem;
+}
+
+.skill-title {
+  color: white;
+  padding: 0 0 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #999;
+}
+
+.skill-text {
+  color: #999;
+}
+
+/* white section */
+
+.white {
+  background-color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.white-title {
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.white-text {
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.white-btn {
+  color: white;
+  background-color: var(--green);
+  padding: 1em 3em;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+/* dark section */
+
+.dark {
+  background-color: var(--black);
+  padding: 5rem 2rem;
+}
+
+.dark .skill-title {
+  border: none;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--green);
+  min-height: 10rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: #999;
+}
+
+.footer-text span {
+  color: #ccc;
+}
