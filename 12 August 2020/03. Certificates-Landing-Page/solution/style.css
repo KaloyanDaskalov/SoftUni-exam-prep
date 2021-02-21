@@ -1,0 +1,278 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  box-sizing: border-box;
+  --blue: #42abf8;
+  --darkblue: #29394b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section,
+footer {
+  width: 80%;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../images/hero-certificates.jpg") center/cover no-repeat;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 85%;
+  margin: auto;
+  padding: 1rem 3rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+  width: 10rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 35rem;
+}
+
+.nav a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav a:not(:last-child) {
+  color: var(--darkblue);
+}
+
+.nav a:last-child {
+  color: white;
+  padding: 0.4em;
+  background-color: var(--blue);
+  border-radius: 100%;
+  display: inline-block;
+  box-shadow: 3px 3px 3px 5px rgba(67, 172, 247, 0.17);
+}
+
+/* header-content */
+
+.header-content {
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.certificates {
+  flex: 0 0 60%;
+}
+
+.certificates-info {
+  background-color: var(--darkblue);
+  padding: 1em;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.certificates-title {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.certificates-description {
+  margin-bottom: 14px;
+}
+
+.certificates-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.certificates-img-container img {
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.certificates-terms {
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+/* main */
+
+.main {
+  padding: 8rem 0.5rem 0rem;
+  background-color: white;
+}
+
+/* Diploma section */
+
+.diploma {
+  margin: 0 auto;
+  color: var(--darkblue);
+}
+
+.diploma-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.diploma-info {
+  padding: 1rem 1rem 2rem;
+  background-color: #eee;
+}
+
+.diploma-description {
+  margin-bottom: 1em;
+}
+
+.diploma-terms {
+  margin-top: 1em;
+}
+
+/* explore */
+
+.explore {
+  margin: 5rem auto 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/sign-up-prompt-background.jpg") center/cover no-repeat;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.explore-title {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.explore-info {
+  width: 47rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.navigator {
+  width: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apply-btn {
+  color: var(--blue);
+  background-color: white;
+  padding: 0.5em 2em;
+  border-radius: 0.5em;
+}
+
+.apply-btn::after {
+  content: "";
+  border-right: 2px solid white;
+  position: relative;
+  left: 60px;
+}
+
+.curriculum-btn {
+  color: white;
+  padding: 0.6em 2em;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.5em;
+}
+
+/* footer */
+
+.footer {
+  margin: 5rem auto 0;
+  border-top: 1px solid var(--darkblue);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 10rem;
+}
+
+.footer-logo p {
+  opacity: 0.4;
+}
+
+.nav-footer {
+  width: 37rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link,
+.icon {
+  color: var(--darkblue);
+}
