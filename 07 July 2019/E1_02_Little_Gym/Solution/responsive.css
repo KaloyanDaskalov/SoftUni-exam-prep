@@ -1,0 +1,88 @@
+@media only screen and (max-width: 800px) {
+  .entry-header-description {
+    top: 59px;
+    font-size: 1.2rem;
+  }
+
+  .entry-header-title {
+    font-size: 3rem;
+  }
+
+  .site-main {
+    margin: 0;
+  }
+
+  .site-logos-container {
+    display: flex;
+    padding: 0 2rem;
+  }
+
+  .site-logo:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .site-logo {
+    font-size: 0.8rem;
+    flex-basis: 100%;
+  }
+
+  .site-logo img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .site-navigation {
+    display: none;
+  }
+
+  .site-logos-container {
+    flex-wrap: wrap;
+  }
+
+  .site-logo {
+    font-size: 1.2rem;
+    flex-basis: 30%;
+  }
+
+  .site-information-image {
+    display: none;
+  }
+
+  .site-information-text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .entry-description {
+    width: auto;
+  }
+
+  .site-form form > p {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-form button {
+    margin: 0 auto;
+  }
+
+  .site-blog-container {
+    margin-top: 0;
+  }
+
+  .site-posts {
+    flex-wrap: wrap;
+  }
+
+  .site-post {
+    flex-basis: 80%;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
