@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="calculator">
+      <figure class="calc-img">
+        <img src="../Requirements-and-Resources/image/image.png" alt="" />
+      </figure>
+      <article class="calc">
+        <h2 class="calc-title">CALORIE CALCULATOR</h2>
+        <div class="calc-menu">
+          <button>Standard units (US)</button><button>Metric units</button>
+        </div>
+        <form class="calc-form">
+          <div class="calc-form-group">
+            <label for="gender"
+              >Gender
+              <select id="gender">
+                <option value="Female">Female</option>
+              </select>
+            </label>
+            <label
+              >Age
+              <input type="text" placeholder="Years.." />
+            </label>
+          </div>
+          <label class="calc-form-weight"
+            >Weight
+            <input type="text" placeholder="Pounds..." />
+          </label>
+          <label
+            >Height
+            <div class="calc-form-height">
+              <input type="text" placeholder="Feet..." />
+              <input type="text" placeholder="Inches..." />
+            </div>
+          </label>
+          <button type="submit">Calculate</button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

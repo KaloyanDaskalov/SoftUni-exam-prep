@@ -55,6 +55,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* header */
 
 .header {
@@ -112,6 +118,8 @@ ul {
 
 .price-cards {
   position: absolute;
+  width: 100%;
+  max-width: 1200px;
   top: 10rem;
   left: 50%;
   transform: translateX(-50%);
@@ -121,8 +129,6 @@ ul {
 
 .card {
   flex-basis: 100%;
-  width: 34rem;
-  height: 24rem;
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -162,7 +168,6 @@ ul {
 .card-footer-professional {
   padding: 1rem;
   width: 100%;
-  height: 6rem;
 }
 
 .card-footer-free *,
@@ -174,16 +179,15 @@ ul {
 .card-footer-fundamentals,
 .card-footer-professional {
   display: flex;
-  justify-content: space-between;
 }
 
 .regular {
-  padding: 0 3rem;
+  padding: 0 1rem 0 0;
   border-right: 2px solid white;
 }
 
 .online {
-  padding: 0 3rem;
+  padding: 0 0 0 1rem;
 }
 
 .card-footer-free {
