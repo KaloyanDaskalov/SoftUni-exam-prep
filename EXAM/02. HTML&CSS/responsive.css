@@ -1,0 +1,36 @@
+@media only screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation-logo-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+  }
+
+  .header-img-wrapper img {
+    display: none;
+  }
+
+  .header-content-text {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .benefits {
+    flex-direction: column;
+    padding: 90px;
+  }
+
+  .info-section {
+    flex-direction: column;
+  }
+
+  .info-section-item {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}

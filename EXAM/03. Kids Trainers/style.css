@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+:root {
+  box-sizing: border-box;
+  --lite-gray: #919191;
+  --dark-gray: #565656;
+  --orange: #ffb402;
+  --blue: #66b9f8;
+  --lite-blue: #92cdfb;
+  --green: #41bead;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* header */
+
+.header {
+  background-color: var(--green);
+  padding: 1.5rem;
+}
+
+.header > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s linear;
+}
+
+.navbar a:hover {
+  color: var(--dark-gray);
+}
+
+/*  main */
+
+.teachers-info {
+  background-color: var(--orange);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+.teachers-info p {
+  color: #fff;
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* chefs */
+.chefs {
+  padding: 5rem 2rem;
+}
+
+.chefs > .wrapper {
+  display: flex;
+}
+
+.card {
+  flex-basis: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-img-container {
+  flex: 0 0 30%;
+  border-radius: 50%;
+  border: 10px solid var(--green);
+  overflow: hidden;
+}
+
+.card-title {
+  color: var(--green);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card-udertitle {
+  color: var(--lite-gray);
+  margin-bottom: 2rem;
+}
+
+.card-text {
+  color: var(--dark-gray);
+}
+
+/* teachers */
+
+.teachers {
+  padding: 8rem 2rem;
+}
+
+.teachers .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.teacher {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacher-img-container {
+  border: 10px solid var(--green);
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.teacher-name {
+  color: var(--green);
+  font-size: 1.5rem;
+}
+
+.teacher > p {
+  color: var(--lite-gray);
+}
+
+/* cta */
+
+.cta {
+  background-color: var(--blue);
+  border-top: 10px solid var(--lite-blue);
+  padding: 5rem 2rem 10rem;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-undertitle {
+  font-size: 1.2rem;
+  max-width: 64rem;
+  margin: 0 auto 4rem;
+}
+
+.cta-form {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-form input {
+  flex: 0 0 25%;
+  padding: 0.5rem;
+  background-color: var(--blue);
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.cta-form input::placeholder {
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  box-shadow: 1px 1px 3px 1px #555;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+/* footer */
+.footer {
+  padding: 2rem;
+  background-color: var(--dark-gray);
+  border-top: 10px solid var(--lite-gray);
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+
+.footer > .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  flex-basis: 100%;
+}
+
+.footer-nav-title {
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-nav .fab {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.footer-nav a:hover {
+  transform: scale(1.1);
+}
